@@ -1,0 +1,4 @@
+1. The value of i at the end of the for loop (prices.length) will be printed to the console. There isn't an error because we used 'var', which is not block/loop-local.
+2. The last discountedPrice will be printed to the console. Again, because discountedPrice will be visible even after the for loop because it was declared using 'var' instead of 'let'.
+3. The last finalPrice will be printed to the console. The finalPrice variable is declared using 'var' and is declared before the for loop so there won't be any errors.
+4. The call discountedPrices([100, 200, 300], .5) will return [50, 100, 150]. The for loop goes through each of the prices (100, 200, 300) and then discounts them using the rate (.5 in this case), rounds it, and then adds it to the new discounted array. Since the discount is 50%, the returned array has each of the prices at half-price.
