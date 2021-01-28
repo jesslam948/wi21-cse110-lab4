@@ -7,3 +7,8 @@
 6. This will also give an error because discountedPrice was declared using 'let' and was declared inside the for-loop code block so it isn't visible outside of that block.
 7. This will print out the last value of finalPrice. This is because finalPrice was declared outside of the for-loop so it will still be visible after the for-loop and will even retain the last value it was assigned within the for-loop.
 8. discountPrices([100, 200, 300], .5) will return [50, 100, 150] because the for loop discounts each price (100, 200, 300) by the rate (50%) and puts the discounted prices into a new discounted array that it eventually returns.
+
+9. An error will be thrown because i is declared using 'let' and is part of the for-loop block so it's not visible outside of the for-loop block
+10. An error will be thrown because discountedPrice was declared using 'const' and was declared within the for-loop block. Thus, it is not visible outside of the for-loop block.
+11. Assuming that errors are not thrown while attempting to re-assign finalPrice within the for-loop, this line should output 0, since it was declared using 'const' and is assumed to never change value.
+12. Assuming that errors are not thown while attempting to update the discounted array within the for-loop, this function will return an empty array []. This is because it was declared using 'const' and is assumed that its value won't change.
