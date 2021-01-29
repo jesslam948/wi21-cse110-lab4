@@ -55,3 +55,5 @@
     f. true. Boolean(2) gets evaulated to true by the conversion rule (2 is not a value that is intuitively "empty" unlike 0). Thus, this evaulates true === true. The types match and the values match so this is true.
 
 16. == is a regular equality operator while === is a strict equality operator. This means that == will check for equality in value and will convert types to match if they don't. On the otherhand, === cares about the types matching and so if the types don't match it will automatically evaluate to false.
+
+17. 'How are you?' will be printed. This is because 2 == true will be evaluted to false (the reasoning is explained in 15e). Then, it will evaulate the else if (2). Since JS will convert conditional statements to boolean values, it is essentially evaulating Boolean(2). Since Boolean(2) gets evaulated to true by the conversion rule, we enter this else if block. Thus, 'How are you?' is printed.
