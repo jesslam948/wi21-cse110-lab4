@@ -40,3 +40,18 @@
     g. 3undefined. This is because "3" is a string so it reads the + sign as a concatenation symbol. undefined converted to a string is "undefined" so it concatenates "3" + "undefined" = "3undefined".
 
     h. NaN. This is because the - sign can only mean subtraction, thus "3" is converted from a string to number, so is undefined but undefined = NaN when converted to a number (based on the conversion rules). Thus, it computes 3 - NaN = NaN.
+
+15.
+    a. true. When comparing values of different types, JS converts the values to numbers. Thus, it evalutes 2 > 1, which is true.
+
+    b. false. These are the same type so they will compared as strings and will be compared character by character. '2' comes after '1' in lexicographic order so this will evaluate to false.
+
+    c. true. These are different types so they are converted to numbers. Thus it evaluates 2 == 2, which is true.
+
+    d. false. This is a strict equality operator so it sees that 2 and '2' are different types and immediately returns false before attempting to convert.
+
+    e. false. These are different types so they are converted numbers. true is converted to 1 (due to the conversion rules) so it attempts to evaluate 1 == 2, which is false.
+
+    f. true. Boolean(2) gets evaulated to true by the conversion rule (2 is not a value that is intuitively "empty" unlike 0). Thus, this evaulates true === true. The types match and the values match so this is true.
+
+16. == is a regular equality operator while === is a strict equality operator. This means that == will check for equality in value and will convert types to match if they don't. On the otherhand, === cares about the types matching and so if the types don't match it will automatically evaluate to false.
