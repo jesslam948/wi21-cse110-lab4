@@ -23,3 +23,20 @@
     d. `student['Favorite Teacher'].name`
 
     e. `student.courseLoad[1]` (I'm assuming we're asking for the index 1 and not the first element which would be at index 0, otherwise we would just replace the 1 with a 0)
+
+14.
+    a. 32. This is because '3' is a string so it reads the + sign as a concatenation symbol. Thus, it converted 2 to a string and concatenated '3' + '2' = '32'.
+
+    b. 1. This is because the - sign can only mean subtraction, thus '3' is converted from a string to a number and then 3 - 2 = 1 was computed.
+
+    c. 3. This is because 3 is a number so the + sign will be read as addition. Then, null becomes 0 based on javascript number conversion rules. Thus it computes 3 + 0 = 3.
+
+    d. 3null. This is because '3' is a string so it reads the + sign as a concatenation symbol. Then, null becomes 'null' based on string conversion rules. Thus it concatenated '3' + 'null' = '3null'.
+
+    e. 4. This is because, when converted to a number, true = 1. Thus, this computes 1 + 3 = 4.
+
+    f. 0. This is because, when converted to a number, false = 0 and null = 0. Thus, this computes 0 + 0 = 0.
+
+    g. 3undefined. This is because "3" is a string so it reads the + sign as a concatenation symbol. undefined converted to a string is "undefined" so it concatenates "3" + "undefined" = "3undefined".
+
+    h. NaN. This is because the - sign can only mean subtraction, thus "3" is converted from a string to number, so is undefined but undefined = NaN when converted to a number (based on the conversion rules). Thus, it computes 3 - NaN = NaN.
