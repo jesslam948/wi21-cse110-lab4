@@ -65,3 +65,12 @@
 - Thus, the function expression we declared earlier is called and computes ((num + 2) * 2).
 - Finally, doSomething returns that result and we go back to modifyArray.
 - This returned result is then pushed to newArr. Which is returned after this process has been repeated on each of the elements of array.
+
+21. output:
+
+    1
+    4
+    3
+    2
+
+    This is because 1 and 4 are printed immediately sequentially since they don't have a setTimeout. 2 is set to be printed after a 1sec (1000 ms) delay while 3 is set to be printed after a 0ms delay. Thus, 3 is printed next and then 2 is printed when once 1sec passes from when the line is read.
