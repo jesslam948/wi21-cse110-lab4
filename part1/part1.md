@@ -57,3 +57,11 @@
 16. == is a regular equality operator while === is a strict equality operator. This means that == will check for equality in value and will convert types to match if they don't. On the otherhand, === cares about the types matching and so if the types don't match it will automatically evaluate to false.
 
 17. 'How are you?' will be printed. This is because 2 == true will be evaluted to false (the reasoning is explained in 15e). Then, it will evaulate the else if (2). Since JS will convert conditional statements to boolean values, it is essentially evaulating Boolean(2). Since Boolean(2) gets evaulated to true by the conversion rule, we enter this else if block. Thus, 'How are you?' is printed.
+
+19. The resulting array is [6,8,10]. This is what happens for each element in the given array ([1,2,3]):
+- Because we specified doSomething as our callback in the modifyArray function call, in line 4 doSomething will be called on the array element.
+- This line also specifies that *doSomething* to use the function expression we just declared (given x, return x * 2) as *it's* callback.
+- So we enter doSomething where num equals the array element (i.e. 1) and then we use the callback method on num + 2.
+- Thus, the function expression we declared earlier is called and computes ((num + 2) * 2).
+- Finally, doSomething returns that result and we go back to modifyArray.
+- This returned result is then pushed to newArr. Which is returned after this process has been repeated on each of the elements of array.
