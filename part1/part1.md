@@ -14,8 +14,12 @@
 12. Assuming that errors are not thown while attempting to update the discounted array within the for-loop, this function will return an empty array []. This is because it was declared using 'const' and is assumed that its value won't change.
 
 13. 
-a. `student.name`
-b. `student['Grad Year']`
-c. `student.greeting()`
-d. `student['Favorite Teacher'].name`
-e. `student.courseLoad[1]` (I'm assuming we're asking for the index 1 and not the first element which would be at index 0, otherwise we would just replace the 1 with a 0)
+    a. `student.name`
+
+    b. `student['Grad Year']`
+
+    c. `student.greeting()`
+
+    d. `student['Favorite Teacher'].name`
+
+    e. `student.courseLoad[1]` (I'm assuming we're asking for the index 1 and not the first element which would be at index 0, otherwise we would just replace the 1 with a 0)
